@@ -82,7 +82,8 @@ const updated=()=>{
               {/* Product Details */}
               <div className="p-4">
                 <div className="flex justify-between items-start">
-                  <h2 className="text-xl font-semibold text-gray-800">${product.price}</h2>
+                  <h2 className="text-xl font-semibold text-gray-800">
+                  ₹{product.price}</h2>
                   <span className="text-sm text-gray-500">{product.createdAt}</span> {/* Displaying createdAt */}
                 </div>
                 <h3 className="mt-2 text-lg text-gray-700">{product.productName}</h3> {/* Displaying productName */}

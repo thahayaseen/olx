@@ -81,7 +81,7 @@ const ProductView = () => {
         <div className="max-w-6xl mx-auto px-4 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Image Section */}
-            <div className="relative rounded-2xl overflow-hidden bg-white shadow-lg">
+            <div className="relative rounded-2xl h-[56vh] overflow-hidden bg-white shadow-lg">
               <div className="aspect-square">
                 <img 
                   src={product.image}
@@ -110,7 +110,8 @@ const ProductView = () => {
                     {product.productName}
                   </h1>
                   <p className="text-3xl font-bold text-blue-600 mt-2">
-                    ${product.price.toLocaleString()}
+                    
+  ₹{product.price.toLocaleString()}
                   </p>
                 </div>
                 <button className="p-2 rounded-full hover:bg-gray-100">
@@ -151,16 +152,7 @@ const ProductView = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <button className="bg-blue-600 text-white py-4 px-6 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg">
-                  <Phone className="w-5 h-5" />
-                  Contact Seller
-                </button>
-                <button className="border-2 border-blue-600 text-blue-600 py-4 px-6 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-blue-50 transition-colors">
-                  <MessageCircle className="w-5 h-5" />
-                  Send Message
-                </button>
-              </div>
+          
             </div>
           </div>
         </div>
